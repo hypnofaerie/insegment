@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="">
+  <nav class="flex items-center justify-between nav_color text-lg py-4 w-full text-white z-10 ">
+    <div class="md:flex items-center justify-between w-full md:mx-40 2xl:mx-80 ">
+      <a href="#" class="flex">
+        <img src="img/Secondary_green.png" alt="" class="rounded-b-sm">
+      </a>
+      <div class="relative flex items-end">
+        <a href="#" class="md:px-1 lg:px-3 hover:font-bold">
+          Services
+        </a>
+        <a href="#" class="md:px-1 lg:px-3 hover:font-bold">
+          Case Studies
+        </a>
+        <a href="#" class="md:px-1 lg:px-3 hover:font-bold">
+          Clients
+        </a>
+        <a href="#" class="md:px-1 lg:px-3 hover:font-bold">
+          Blog
+        </a>
+        <a href="#" class=" md:px-1 lg:px-3 hover:font-bold">
+          Company
+        </a>
+      </div>
+      <div class="flex items-center font-bold">
+        <a href="#" class=" sm:px-1 lg:px-3">
+          Contact Us
+        </a>
+        <div class="flex">
+          <div x-data="{ slideOut: false }" class="block">
+            <button @click="slideOut = !slideOut" class="px-2 mt-2 nav-color hover-bg">
+              <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 17H20M4 12H20M4 7H20" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <div x-show="slideOut" x-transition.opacity class="fixed inset-0 bg-black/25">
+            </div>
+            <div x-show="slideOut" x-transition:enter="transition ease-out duration-300"
+              x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0"
+              x-transition:leave="transition ease-in duration-300" x-transition:leave-start="translate-y-0"
+              x-transition:leave-end="-translate-y-full" @click.outside="slideOut = false"
+              class="fixed inset-y-0 nav_color left-0 z-50 w-full overflow-auto">
+              <div class="flex flex-col leading-10 xl:leading-12 nav-text-color text-lg xl:text-xl">
+                <div class="flex items-center justify-between nav_color text-lg py-6 fixed w-full text-white z-10 ">
+
+                  <div class="hidden md:flex items-center justify-between w-full md:mx-20 xl:mx-40 md:mx-40 2xl:mx-80 mx-80 ">
+                    <a href="#" class="flex">
+                      <img src="img/Secondary_green.png" alt="" class="rounded-b-sm">
+                    </a>
+                    <a href="#" @click="slideOut = false" class="flex">
+                      <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <svg width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" stroke="#FFF" stroke-width="2" d="M7,7 L17,17 M7,17 L17,7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="">
+    <!-- first section -->
+    <section class="mx-0 flex carousel-inner text-white">
+      <!-- hero -->
+      <img src="img/1.png" alt="planet-earth" class="flex-1 relative">
+      <div class=" absolute  md:top-10 xl:top-20 sm:mx-0 md:mx-40 2xl:mx-80">
+        <h1 class="text-base md:text-4xl md:mt-10 lg:mt-0  lg:text-6xl">
+          Welcome to the launch <br>of the brand new <br><span class="green">inSegment</span> website!
+        </h1>
+        <p class="ml-96 px-36 mt-28">
+          As an <span class="green">AWARD-WINNING DIGITAL MARKETING AGENCY</span>, we are thrilled to unveil our fresh
+          and innovative online presence.<br>
+          Prepare to embark on a digital journey that will take your business to new heights.<br> Our new website is
+          designed with
+          a theme of exploration and space, symbolizing the limitless possibilities that lie ahead for your brand.
+        </p>
+
+        <!-- cards -->
+        <div class="flex bottom-10 parent mt-40 uppercase text-4xl gap-x-20">
+          <p class="relative card-bg p-6 items-center rounded-md  hover-bg">
+            top-tier creative services
+            <svg class="absolute -bottom-1 -right-1" height="44px" width="40px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve">
+              <circle style="fill:#34c759;" cx="160.32" cy="182.432" r="160.32" />
+            </svg>
+          </p>
+          <p class="relative card-bg p-6 items-center rounded-md  hover-bg">
+            superior 3D graphic design
+            <svg class="absolute -bottom-1 -right-1" height="44px" width="40px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve">
+              <circle style="fill:#34c759;" cx="160.32" cy="182.432" r="160.32" />
+            </svg>
+          </p>
+          <p class="relative card-bg p-6 items-center rounded-md  hover-bg">
+            expert content writing services
+            <svg class="absolute -bottom-1 -right-1" height="44px" width="40px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve">
+              <circle style="fill:#34c759;" cx="160.32" cy="182.432" r="160.32" />
+            </svg>
+
+          </p>
+          <p class="relative card-bg p-6 items-center rounded-md  hover-bg">
+            powerful ad copy
+            <svg class="absolute -bottom-1 -right-1" height="44px" width="40px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve">
+              <circle style="fill:#34c759;" cx="160.32" cy="182.432" r="160.32" />
+            </svg>
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- unique responsive web design  -->
+    <section class="mx-0 flex carousel-inner text-white">
+      <img src="img/bg2.jpg" alt="blue-gradient-background" class="flex-1">
+      <div class="absolute  md:top-0 xl:top-0 sm:mx-0 md:mx-40 2xl:mx-80 pt-10">
+        <h1 class="text-base text-center text-blue-600 uppercase md:text-4xl md:mt-10 lg:mt-0  lg:text-6xl py-10">
+          unique responsive web design
+        </h1>
+        <div class="grid grid-cols-2 sec-2 rounded-lg h-2/4">
+          <img src="img/sec2.jpg" alt="bright-orange-planet-close-up" class="flex-1 rounded-l-lg">
+          <div class="p-20 text-2xl">
+            <p class="">
+              Ensures that your brand's message reaches your <span class="text-blue-600 font-semibold">target
+                audience</span>
+              effectively across <span class="text-blue-600 font-semibold">all devices</span>
+            </p>
+            <ul class="pl-10">
+              <li><span class="text-blue-600 font-semibold">•</span> computer</li>
+              <li><span class="text-blue-600 font-semibold">•</span> tablet</li>
+              <li><span class="text-blue-600 font-semibold">•</span> mobile phone</li>
+            </ul>
+            <p class="">Your website will adapt seamlessly,
+              providing an <span class="text-blue-600 font-semibold">optimal user experience</span>.
+            </p>
+          </div>
+
+        </div>
+        <div class="grid grid-cols-2 mt-20 sec-2 rounded-lg h-2/4">
+          <div class="p-24 text-2xl">
+            <p class="pt-8">
+              For over <span class="text-blue-600 font-semibold">a decade and a half</span>, we have been known for
+              delivering
+            </p>
+            <ul class="pl-10 mt-6 text-end ">
+              <li><span class="text-blue-600 font-semibold">•</span> unparalleled web design services</li>
+              <li><span class="text-blue-600 font-semibold">•</span> content of the highest standard</li>
+              <li><span class="text-blue-600 font-semibold">•</span> a high level of excellence</li>
+            </ul>
+          </div>
+          <img src="img/sec3.jpg" alt="nebula-photo" class="flex-1 rounded-r-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form  -->
+    <section class="mx-0 flex carousel-inner text-white">
+      <img src="img/section2.jpg" all="pink-nebula" class="flex-1">
+      <div class="absolute  md:top-10 xl:top-20 sm:mx-0 md:mx-40 2xl:mx-80">
+        <h1 class="text-5xl p-6 md:text-5xl tracking-tight">
+          So, are you ready to reach new frontiers?
+        </h1>
+        <h1 class="text-5xl pl-6 pb-6 md:text-5xl tracking-tight">
+          Let's start a project together.
+        </h1>
+        <h2 class="mt-6 pl-28 md:pl-80 pb-4 text-2xl">
+          Our team of experienced professionals is eager to guide you through
+          the
+          ever-evolving digital landscape. <span class="text-pink-400 font-semibold">Together</span> we will navigate
+          the challenges and harness the opportunities to land your
+          business right in the spotlight.
+        </h2>
+        <h2 class="pl-28 md:pl-80 pb-4 text-2xl">
+          Explore our new website, discover our services, and let us take your brand to the next level. Join us on this
+          exciting
+          journey of growth and success.
+
+        </h2>
+        <h2 class="pl-28 md:pl-80 pb-4 text-2xl">
+          Unlock your potential with inSegment. Get ready to elevate your digital presence and conquer new horizons.
+
+        </h2>
+        <form class="p-6" action="index.html" method="post">
+
+          <div class="">
+            <p class="py-8 tracking-tight text-sm font-semibold text-gray-300">
+              <span class="w-16 h-px bg-gray-300 inline-block mb-1 mr-4"></span>
+              What can we help you with? *
+            </p>
+            <div class="grid grid-cols-2 gap-10 md:ml-40 mb-10">
+              <label class="form-control form-color px-4 py-2 text-white text-lg border-b-2 border-pink-400">
+                Branding
+                <input type="checkbox" name="branding" checked>
+              </label>
+              <label class="form-control form-color px-4 py-2 text-white text-lg border-b-2 border-pink-400">
+                UI/UX Design
+                <input type="checkbox" name="ux">
+              </label>
+            </div>
+
+          </div>
+          <div class="">
+            <p class="py-8 tracking-tight text-sm font-semibold text-gray-300">
+              <span class="w-16 h-px bg-gray-300 inline-block mb-1 mr-4"></span>
+              Tell us about your project *
+            </p>
+            <div class="flex flex-col md:ml-40">
+              <input
+                class="form-color placeholder:text-pink-400 mb-10 bg-pink-400  border-b-2 border-pink-400 text-lg py-2 px-4 outline-0 focus-visible:bg-pink-400  focus-visible:border-teal-600 placeholder:text-white"
+                placeholder="Describe the project in your words" type="text" name="" value="">
+
+              <input
+                class="placeholder:text-pink-400 mb-10 bg-pink-400   border-b-2 border-pink-400 text-lg py-2 px-4 outline-0 focus-visible:bg-pink-400  focus-visible:border-teal-600 placeholder:text-white"
+                placeholder="What is your timeline expectation?" type="text" name="" value="">
+              <button
+                class="dropdown text-left focus:text-white mb-10 bg-transparent border-b-2 border-pink-400 text-lg py-2 px-4 outline-0 focus:border-teal-600 text-white form-color focus:bg-pink-400"
+                type="button" name="dropdown-button" aria-expanded="false" aria-controls="budget-dropdown">
+                <span>
+                  What is your budget expectation?
+                </span>
+                <ul class="text-white form-color dropdown_menu w-full border-t-2 border-pink-400" id="budget-dropdown">
+                  <li>500$</li>
+                  <li>500 - 1000$</li>
+                  <li>1000$ - 2000$</li>
+                </ul>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex justify-end mb-10">
+            <button type="button" name="button"
+              class="form-color mt-4 py-3 px-7 bg-pink-400 text-white text-sm font-bold">Send
+              inquiry</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="tailwind.config.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
